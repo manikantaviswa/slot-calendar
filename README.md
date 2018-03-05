@@ -1,15 +1,15 @@
 # Angular Bootstrap Calendar
 
 [![project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)](https://img.shields.io/badge/project-unmaintained-red.svg)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mattlewis92/angular-bootstrap-calendar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Build Status](https://travis-ci.org/mattlewis92/angular-bootstrap-calendar.svg?branch=master)](https://travis-ci.org/mattlewis92/angular-bootstrap-calendar)
-[![codecov](https://codecov.io/gh/mattlewis92/angular-bootstrap-calendar/branch/master/graph/badge.svg)](https://codecov.io/gh/mattlewis92/angular-bootstrap-calendar)
-[![Bower version](https://badge.fury.io/bo/angular-bootstrap-calendar.svg)](http://badge.fury.io/bo/angular-bootstrap-calendar)
-[![npm version](https://badge.fury.io/js/angular-bootstrap-calendar.svg)](http://badge.fury.io/js/angular-bootstrap-calendar)
-[![devDependency Status](https://david-dm.org/mattlewis92/angular-bootstrap-calendar/dev-status.svg)](https://david-dm.org/mattlewis92/angular-bootstrap-calendar?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/mattlewis92/angular-bootstrap-calendar.svg)](https://github.com/mattlewis92/angular-bootstrap-calendar/issues)
-[![GitHub stars](https://img.shields.io/github/stars/mattlewis92/angular-bootstrap-calendar.svg)](https://github.com/mattlewis92/angular-bootstrap-calendar/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mattlewis92/angular-bootstrap-calendar/master/LICENSE)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mattlewis92/slot-calendar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/mattlewis92/slot-calendar.svg?branch=master)](https://travis-ci.org/mattlewis92/slot-calendar)
+[![codecov](https://codecov.io/gh/mattlewis92/slot-calendar/branch/master/graph/badge.svg)](https://codecov.io/gh/mattlewis92/slot-calendar)
+[![Bower version](https://badge.fury.io/bo/slot-calendar.svg)](http://badge.fury.io/bo/slot-calendar)
+[![npm version](https://badge.fury.io/js/slot-calendar.svg)](http://badge.fury.io/js/slot-calendar)
+[![devDependency Status](https://david-dm.org/mattlewis92/slot-calendar/dev-status.svg)](https://david-dm.org/mattlewis92/slot-calendar?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/mattlewis92/slot-calendar.svg)](https://github.com/mattlewis92/slot-calendar/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mattlewis92/slot-calendar.svg)](https://github.com/mattlewis92/slot-calendar/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mattlewis92/slot-calendar/master/LICENSE)
 
 Like what you see here? [Hire me](https://mattlewis.me/?section=hire-me&utm_source=github&utm_medium=banner&utm_campaign=contracting)! 👨‍💻
 
@@ -27,7 +27,7 @@ Due to the growing popularity of angular 2 and beyond, this project is considere
 
 ## Demo
 
-https://mattlewis92.github.io/angular-bootstrap-calendar/
+https://mattlewis92.github.io/slot-calendar/
 
 ## About
 
@@ -58,14 +58,14 @@ The calendar has a few dependencies, these are as follows, and must be included 
 You can install through bower:
 
 ```
-bower install --save angular-bootstrap-calendar
+bower install --save slot-calendar
 ```
 
 You will then need to include the JS and CSS files for the plugin:
 
 ```
-<link href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
-<script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js"></script>
+<link href="bower_components/slot-calendar/dist/css/slot-calendar.min.css" rel="stylesheet">
+<script src="bower_components/slot-calendar/dist/js/slot-calendar-tpls.min.js"></script>
 ```
 
 And finally add the module dependency in your AngularJS app (you can remove ui.bootstrap if you don't want the extra dependency - it is only required for collapse animations and tooltips):
@@ -76,18 +76,18 @@ angular.module('myApp', ['mwl.calendar', 'ui.bootstrap']);
 
 Alternatively you can install through npm:
 ```
-npm install --save angular-bootstrap-calendar
+npm install --save slot-calendar
 ```
 
 Or if using npm 3+ where peer dependencies aren't automatically installed:
 ```
-npm install --save angular-bootstrap-calendar angular bootstrap moment angular-ui-bootstrap
+npm install --save slot-calendar angular bootstrap moment angular-ui-bootstrap
 ```
 
 Then add as a dependency to your app:
 
 ```javascript
-angular.module('myApp', [require('angular-bootstrap-calendar'), require('angular-ui-bootstrap')]);
+angular.module('myApp', [require('slot-calendar'), require('angular-ui-bootstrap')]);
 ```
 
 ## Documentation
@@ -330,7 +330,7 @@ moment.locale('en_gb', {
 });
 ```
 
-For a full list of all available formats and their defaults see [calendarConfig.js](https://github.com/mattlewis92/angular-bootstrap-calendar/blob/master/src/services/calendarConfig.js)
+For a full list of all available formats and their defaults see [calendarConfig.js](https://github.com/mattlewis92/slot-calendar/blob/master/src/services/calendarConfig.js)
 
 ## Hiding the calendar
 When hiding the calendar it is recommended to use ng-if instead of ng-show/hide otherwise drag, drop, resize and date range selection will not work properly.

@@ -81,7 +81,7 @@ angular
       };
 
       $window.createPlunker.Plunker.create()
-        .setDescription('http://mattlewis92.github.io/angular-bootstrap-calendar/')
+        .setDescription('http://mattlewis92.github.io/slot-calendar/')
         .addIndexHtmlAttribute('ng-app', 'mwl.calendar.docs')
         .addNpmPackage('moment', {version: momentVersion})
         .addNpmPackage('interactjs', {version: 1})
@@ -90,10 +90,10 @@ angular
         .addNpmPackage('angular-ui-bootstrap', {version: uibVersion, filename: 'dist/ui-bootstrap-tpls.js'})
         .addNpmPackage('rrule', {version: 2})
         .addNpmPackage('angular-bootstrap-colorpicker', {version: 3})
-        .addNpmPackage('angular-bootstrap-calendar')
+        .addNpmPackage('slot-calendar')
         .addNpmPackage('bootstrap', {filename: 'dist/css/bootstrap.css', version: bsVersion})
         .addNpmPackage('angular-bootstrap-colorpicker', {version: 3, filename: 'css/colorpicker.min.css'})
-        .addNpmPackage('angular-bootstrap-calendar', {filename: 'dist/css/angular-bootstrap-calendar.min.css'})
+        .addNpmPackage('slot-calendar', {filename: 'dist/css/slot-calendar.min.css'})
         .addFile({name: 'example.js', contents: scriptContent(content.javascript)})
         .addFile({name: 'helpers.js', contents: helpers.scripts})
         .setIndexBody(content.markup)

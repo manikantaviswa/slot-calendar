@@ -9,7 +9,7 @@ module.exports = env => {
 
   const MIN = process.argv.indexOf('-p') > -1;
   let cssFilename, jsFilename;
-  jsFilename = cssFilename = 'angular-bootstrap-calendar';
+  jsFilename = cssFilename = 'slot-calendar';
   if (!env.excludeTemplates) {
     jsFilename += '-tpls';
   }
